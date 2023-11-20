@@ -1,0 +1,98 @@
+.middle-section-wrapper {
+    height: 420px;
+    width: 100%;
+    background-color: #202120;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-section-wrapper > .middle-left-side {
+    width: 600px;
+    height: 420px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.middle-section-wrapper > .middle-left-side > .middle-text {
+    height: 300px;
+    width: 570px;
+}
+
+.middle-section-wrapper > .middle-left-side > .middle-text > .top-heading h1 {
+    font-weight: 180;
+    font-size: 2.2em;
+    color: #e3e2de;
+}
+
+.middle-section-wrapper > .middle-left-side > .middle-text > .top-heading h1 i {
+    color: #cfb63c;
+}
+
+.middle-section-wrapper > .middle-left-side > .middle-text > .bottom-heading h3 {
+    font-weight: 200;
+    font-size: 1.7em;
+    color: #cfcdc8;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+}
+
+.middle-section-wrapper > .middle-left-side > .middle-links {
+    height: 50px;
+    display: flex;
+    column-gap: 15px;
+}
+
+.middle-section-wrapper > .middle-left-side > .middle-links > .sign-up-for-free-link a {
+    width: 80px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #44cf70;
+    color: black;
+    font-weight: 200;
+    font-size: 1.8em;
+}
+
+.middle-section-wrapper > .middle-left-side > .middle-links > .learn-more-link a {
+    width: 80px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 200;
+    font-size: 1.8em;
+}
+
+.middle-section-wrapper > .middle-right-side {
+    margin-top: 4px;
+    margin-right: 0px;
+}
+
+.middle-section-wrapper > .middle-right-side > .middle-image-heading h1 {
+    font-weight: 200;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color:white;
+}
+
+.middle-section-wrapper > .middle-right-side > .middle-image-heading h1 span {
+    color: #63c5e6;
+}
+
+.middle-section-wrapper > .middle-right-side > .img-wrapper img {
+    width: 500px;
+    height: 370px;
+    margin-right: 0px;
+    float: right;
+}
+
+
+
+
