@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 6</title>
+
+    <style>
+        .checkpoint_questions > .spacer30  {
+            height: 30px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="checkpoint_content">
+
+        <div class="checkpoint_title">
+            <h1>CHECKPOINT 6</h1>
+        </div>
+
+        <div class="checkpoint_questions">
+
+            <div class="question_1">
+                <h2>1. ¿Para qué usamos Clases en Python?</h2>
+    
+                <p>
+                    In Python, we do use classes in order to define the properties that the objects we are creating are going to have.
+                </p>
+
+                <p>
+                    The syntax we use in order to create a <b>Class</b> is as follows in the next example, where we are creating the phone class, that contains the <b>attributes</b> brand, model and camera:
+                </p>
+
+                <img src="Images\1_1.JPG" alt="#">
+
+                <p>
+                    Once we have created the class, we can create objects by <b>instantiating the class</b>, which is the same as saying that we are creating the <b>object</b> as the result of passing it through the class.
+                </p>
+
+                <img src="Images\1_2.JPG" alt="#">
+
+                <p>
+                    As we can see, an object can have attributes, as we showed the attributes brand, model and camera in our example, but also can perform actions. These actions we are talking about are called <b>methods</b>, and are basically functions we create inside a class. Here we can see how we can create the methods call and hang_out in our example:
+                </p>
+
+                <img src="Images\1_3.JPG" alt="#">
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="question_2">
+                <h2>2. ¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?</h2>
+    
+                <p>
+                    In Python, a <b>constructor</b> is a <b>special method</b> that is called when an object is created. The purpose of a python constructor is to assign values to the attributes of the class.
+                </p>
+
+                <p>
+                    The syntax used for creating a constructor is to create a function with <b>_init__</b> name.
+                </p>
+
+                <p>
+                    We have already used the constructor in the example we walked through previously, as we can see in the next picture:
+                </p>
+
+                <img src="Images\2_1.JPG" alt="#">
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="question_3">
+                <h2>3. ¿Cuáles son los tres verbos de API?</h2>
+
+                <p>
+                    There are a few verbs, specific to the HTTP protocol, that are used to define very specific operations on the API resources.
+                </p>
+
+                <p>
+                    The most used ones are : GET, PUT and DELETE.
+                </p>
+
+                <p>
+                    These methods allow you to create endpoints in order to perform the specific operation each one of them can do. Here you have what each of then can perform: 
+                </p>
+
+                <ul>
+                    <li><b>GET:</b></li>
+                </ul>
+
+                <p>
+                    GET means what is called the show route or the show endpoint where you are querying for a single guide.
+                </p>
+
+                <ul>
+                    <li><b>PUT:</b></li>
+                </ul>
+
+                <p>
+                    With PUT we can update or edit a specific guide.
+                </p>
+
+                <ul>
+                    <li><b>DELETE:</b></li>
+                </ul>
+
+                <p>
+                    With the DELETE method we can create a function that is going to take in a specific guide, and then it's going to remove it from the database.
+                </p>
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="question_4">
+                <h2>4. ¿Es MongoDB una base de datos SQL o NoSQL?</h2>
+    
+                <p>
+                    MongoDB is a document oriented open source NoSQL database system. Opposite to SQL databases that store data in a structured way, NoSQL databases store data in its original format, making them more scalable.
+                </p>
+
+                <p>
+                    Instead of storing data in tables, as in SQL databases, MongoDB stores BSON data structures (similar to JSON) in a dynamic scheme, so data integration in some parts of the applications are easier and faster.
+                </p>
+
+                <p>
+                    You can create a MongoDB collection and then insert documents to the collection and query specific documents in a MongoDB collection.
+                </p>
+
+                <p>
+                    Thanks to the document model used in MongoDB, information can be embedded inside a single document rather than relying on expensive join operations from traditional relational databases. This makes queries much faster, and returns all the necessary information in a single call to the database.
+                </p>
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="question_5">
+                <h2>5. ¿Qué es una API?</h2>
+    
+                <p>
+                    <b>API</b> goes for Application Programming Interface. It is a set of well-defined rules used to formally specify communication between two software components so they can share data.
+                </p>
+
+                <p>
+                    One type of API is the <b>API REST</b>. They use the HTTP protocol to send and receive data. REST goes for REpresentational State Transfer. This is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. These systems are characterized by how they are stateless and separate the concerns of client and server. 
+                </p>
+
+                <p>
+                    Systems that follow the REST paradigm are stateless, meaning that the server does not need to know anything about what state the client is in and vice versa. In this way, both the server and the client can understand any message received, even without seeing previous messages.
+                </p>
+
+                <p>
+                    In the REST architectural style, the implementation of the client and the implementation of the server can be done independently without each knowing about the other. This means that the code on the client side can be changed at any time without affecting the operation of the server, and the code on the server side can be changed without affecting the operation of the client.
+                </p>
+
+                <p>
+                    The most used format for sending information is JSON (JavaScript Object Notation).
+                </p>
+
+                <p>
+                    APIs can be public or private. A private API requires authentication. When you authenticate for the first time, the server returns you a token. A token is an object that contains the authentication data. When you request additional information, the server will check if the token is still available and, if so, will not ask you for a new authentication.
+                </p>
+
+                <p>
+                    APIs can be local or remote. The local APIs are the ones that are executed in the same environment. For example, if you are developing an Android app and you need to allow notifications to make the phone vibrate, in that case you connect with the phone’s vibration API, so everything happens in the phone. With remote APIs you use data from an application that is outside, in another place. Remote APIs can use web services and, in that case, they can use REST architecture.
+                </p>
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="question_6">
+                <h2>6. ¿Qué es Postman?</h2>
+    
+                <p>
+                    Postman is an application that allows you to test APIs, allowing you to send requests to web services and see results.
+                </p>
+
+                <p>
+                    Postman offers a user-friendly interface that makes the system of API development easy. The application lets you create, take a look at, and manage APIs without the need for complex coding, making it accessible to beginners and skilled programmers.
+                </p>
+
+                <p>
+                    Postman allows you to store your API requests, so you can check and reuse them in the future. With collections, you can link related API elements together for easy editing, sharing, testing, and reuse. It helps arrange and group related requests, so you can reference and reuse particular API calls faster.
+                </p>
+
+                <p>
+                    It's so easy to use Postman. Let’s imagine that you want to test the next API: https://pokeapi.co/api/v2/pokemon/ditto.
+                </p>
+
+                <p>
+                    You have to open a new request in Postman, select the GET method and paste the API in the available space for it. Once you have it, you have to click send and, if there’s no error, the code 200 is going to appear in your screen and this way Postman is going to communicate with that outside API and then, whenever it gets data back, it's going to return it and you are going to be able to see the returned data on the screen.
+                </p>
+
+                <p>
+                    Depending on the type of code you get back, the meaning is going to be different. HTTP status codes are grouped into five classes, each of them beginning with a number that represents the type of response. The classes are:
+                </p>
+
+                <ul>
+                    <p><li><b>1XX:</b> These codes indicate that the server has received the request and is processing it. They are primarily used to manage communication between the client and server during the early stages of a request-response cycle.</li></p>
+
+                    <p><li><b>2XX:</b> These codes indicate that the client’s request was successfully received, understood, and processed by the server.</li></p>
+
+                    <p><li><b>3XX:</b> These codes indicate that the client needs to take additional actions to fulfill the request. They are often used when the requested resource has moved to a different location.</li></p>
+
+                    <p><li><b>4XX:</b> These codes indicate that there was an issue with the client’s request, such as a mistyped URL or invalid credentials.</li></p>
+
+                    <p><li><b>5XX:</b> These codes indicate that the server encountered an error while trying to fulfill the client’s request, such as, 500 Internal Server Error, 502 Bad Gateway or 503 Service Unavailable.</li></p>
+                </ul>
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="question_7">
+                <h2>7. ¿Qué es el polimorfismo?</h2>
+    
+                <p>
+                    In Python, <b>polymorphism</b> is often used in Class methods, where we can have multiple classes with the same method name.
+                </p>
+
+                <p>
+                    The concept itself, refers to the fact of being able to send the same kind of message to different objects.
+                </p>
+
+                <p>
+                    Even if we are giving the same method to different objects, their behavior it’s different since their properties are different as well.
+                </p>
+
+                <p>
+                    For example, let’s imagine we have the classes Cat and Dog. We are going to walk through three ways of how we can have polymorphism, linked to the sound each animal performs:
+                </p>
+
+                <ol>
+                    <li>
+                        <p><b>By executing the same method for different objects:</b></p>
+
+                        <img src="Images\7_1.JPG" alt="#">
+
+                        <p>Here we have polymorphism since we are sending the same message but we are changing the object where the method is being implemented.</p>
+                    </li>
+
+                    <li>
+                        <p><b>Same function but different arguments:</b></p>
+
+                        <img src="Images\7_2.JPG" alt="#">
+
+                        <p>Here we are passing different arguments to the same function.</p>
+                    </li>
+
+                    <li>
+                        <p><b>Inheritance polymorphism:</b></p>
+
+                        <img src="Images\7_3.JPG" alt="#">
+
+                        <p>Here we are inheriting from the <b>Parent class</b>, Animal.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="question_8">
+                <h2>8. ¿Qué es un método dunder?</h2>
+    
+                <p>
+                    In Python, dunder methods are functions with a special name reserved for them. These dunder methods are created with the aim of creating special functionalities that with normal methods we couldn’t create.
+                </p>
+
+                <p>
+                    We have already seen the <b>constructor</b> method, that it’s a dunder method used for creating the object.
+                </p>
+
+                <ul>
+                    <li><b>__init__:</b></li>
+                </ul>
+
+                <img src="Images\8_1.JPG" alt="#">
+
+                <p>
+                    Apart from the constructor, we have some other dunder methods, as we are going to see below:
+                </p>
+
+                <ul>
+                    <li><b>__str__:</b></li>
+                </ul>
+
+                <p>
+                    The __str__() dunder method returns a reader-friendly string representation of a class object. Returns a representation of the object in a string.
+                </p>
+
+                <img src="Images\8_2.JPG" alt="#">
+
+                <ul>
+                    <li><b>__repr__:</b></li>
+                </ul>
+
+                <p>
+                    The __repr__() dunder method returns the string representation of the object or class.
+                </p>
+
+                <img src="Images\8_3.JPG" alt="#">
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="question_9">
+                <h2>9. ¿Qué es un decorador de python?</h2>
+    
+                <p>
+                    Decorators in Python are a special function that decorates another function. Adds extra code to the function we already had, it could be before or after.
+                </p>
+
+                <p>
+                    Decorators don’t change the function’s original code but add an extra functionality to the already existing one.
+                </p>
+
+                <p>
+                    The syntax for using decorator is by using by adding @.
+                </p>
+
+                <p>
+                    With the next example we can see how we can use decorators to add extra functionalities to our original code:
+                </p>
+
+                <img src="Images\9_1.JPG" alt="#">
+
+                <p>
+                    Inside decorators, we have <b>@property</b>, which is used to assign a "special" functionality to certain methods so that they act as <b>getters</b>, <b>setters</b> or <b>deleters</b> when defining and using properties in a class. This way we can access private attributes of a class that are defined by using an _ (one underscore) or __ (two underscores), depending on how private they are, in the __init__ method.
+                </p>
+
+                <p>
+                    With the next example qe are going to see how we can define getters, setters, and deleters with @property:
+                </p>
+
+                <img src="Images\9_2.JPG" alt="#">
+            </div>
+
+            <div class="spacer30"></div>
+        </div>
+    </div>
+</body>
+</html>
