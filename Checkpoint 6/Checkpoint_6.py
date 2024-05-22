@@ -4,3 +4,5 @@ class User:
         self.password = password
         
 user_1 = User("developer_36", "Python_0")
+
+print(user_1.password)
