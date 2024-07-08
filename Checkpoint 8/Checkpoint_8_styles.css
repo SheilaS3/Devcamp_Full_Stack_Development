@@ -1,0 +1,90 @@
+.header-wrapper {
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px;
+    margin: -8px;
+}
+
+.header-wrapper > .left-column {
+    width: 17%;
+}
+
+.header-wrapper > .left-column > .title {
+    color: aliceblue;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 1.75em;
+    font-weight: 900;
+}
+
+.header-wrapper > .right-column {
+    width: 83%;
+    padding: 22px 20px;
+}
+
+.header-wrapper > .right-column > .questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.header-wrapper > .right-column > .questions > .question {
+    align-content: center;
+}
+
+.header-wrapper > .right-column > .questions > .question a {
+    text-decoration: none;
+    color: #68ddbd;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.checkpoint_content {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin-top: 8px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+    margin-right: -8px;
+}
+
+.checkpoint_content > .checkpoint_title {
+    display: flex;
+    font-family: "Ubuntu Condensed", sans-serif;
+    text-align: justify;
+    justify-content: center;
+    width: 65%;
+    font-weight: 900;
+    font-size: 1.75em;
+}
+
+.checkpoint_content > .checkpoint_questions {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    justify-content: center;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkpoint_content > .checkpoint_questions > .questions {
+    text-align: justify; 
+}
+
+.checkpoint_content > .checkpoint_questions > .questions img {   
+    width: 400px;
+    height: 100%;
+    margin-left: 210.5px;
+}
+
+.checkpoint_content > .checkpoint_questions > .spacer30  {
+    height: 30px;
+    width: 100%;
+}
