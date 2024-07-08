@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 8</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed" rel="stylesheet">
+
+    <link rel="stylesheet" href="Checkpoint_8_styles.css">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <div class="left-column">
+            <div class="title">
+                <p>
+                    Checkpoint 8
+                </p>
+            </div>
+        </div>
+ 
+        <div class="right-column">
+            <div class="questions">
+                <div class="question">
+                    <a href="#question1">Question 1</a>
+                </div>
+
+                <div class="question">
+                    <a href="#question2">Question 2</a>
+                </div>
+
+                <div class="question">
+                    <a href="#question3">Question 3</a>
+                </div>
+
+                <div class="question">
+                    <a href="#question4">Question 4</a>
+                </div>
+
+                <div class="question">
+                    <a href="#question5">Question 5</a>
+                </div>
+
+                <div class="question">
+                    <a href="#question6">Question 6</a>
+                </div>
+
+                <div class="question">
+                    <a href="#question7">Question 7</a>
+                </div>
+
+                <div class="question">
+                    <a href="#question8">Question 8</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkpoint_content">
+
+        <div class="checkpoint_title">
+            <h1>CHECKPOINT 8</h1>
+        </div>
+
+        <div class="checkpoint_questions">
+
+            <div class="questions" id="question1">
+                <h2>1. ¿Qué tipo de bucles hay en JS?</h2>
+    
+                <p>
+                    Loops offer a quick and easy way to do something repeatedly. There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times.
+                </p>
+
+                <p>
+                    The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others. Here, we are going to show the three most used loop types in JavaScript: <b>“for”</b>, <b>“while”</b> and <b>“do…while”</b>.
+                </p>
+
+                <ul>
+                    <h3><li><b><u>FOR:</u></b></li></h3>
+                </ul>
+
+                <p>
+                    A for loop repeats until a specified condition evaluates to false. JavaScript provides three types of for loops: <b>traditional for loops</b>, the <b>for in loop</b>, and the functional <b>forEach loop</b>. In order to see the differences of the three types of for loops, we are going to go through an example of each of them iterating through the following array:
+                </p>
+
+                <img src="Images\Image_1.JPG" alt="#">
+
+                <h4><b><u>Traditional for loop:</u></b></h4>
+
+                <p>
+                    In a for loop, we have to declare three things:
+                </p>
+
+                <p>
+                    <ul>- First, we have to declare a variable that is going to be used throughout the loop.</ul>
+                    <ul>- Then, we have to declare a condition which means we want you to keep looping until this condition is not met.</ul>
+                    <ul>- The last one is an incrementor.</ul>
+                </p>
+
+                <p>
+                    Considering, the three thing we have to declare in a for loop, here we have a for loop example so we can take a look to the syntax:
+                </p>
+
+                <img src="Images\Image_2.JPG" alt="#">
+
+                <p>
+                    Here, the for statement declares the <b>variable i</b> and initializes it to 0. It checks that <b>i</b> is less than the condition set <b>(i < countries.length)</b>, performs the succeeding <b>console.log</b>, and increments i by 1 after each pass through the loop.
+                </p>
+
+                <p> 
+                    <b>i++</b> is the incrementor. With each iteration, with each time we go through the loop, the loop starts to zero but then, the next time it goes through the loop, it is going to change to 1.
+                </p>
+
+                <h4><b><u>for in loop:</u></b></h4>
+
+                <p>
+                    The way for in loop work is different to the traditional for loop, you have to declare an iterator variable. The common convention to name the iterator variable is to use the singular name of what your array is called. So, if in our example, the variable containing our array is called countries, the iterator variable should be country.
+                </p>
+
+                <p>
+                    It’s important to keep in mind that country doesn't represent the value, it represents the index.
+                </p>
+
+                <img src="Images\Image_3.JPG" alt="#">
+
+                <p>
+                    The difference with the traditional for loop is that, here, you don't have to put in your own conditions and that you don't have to have an incrementor since for-in loop automatically does that work for you. The for in loop knows that you are only going to loop as many times over as many elements that are contained inside of the collection.
+                </p>
+
+                <h4><b><u>forEach loop:</u></b></h4>
+
+                <p>
+                    The forEach loop fits a little bit more with a modern javascript programming paradigm than the other two for loops we have gone through up until now. The syntax in the forEach loop looks like in the next example:
+                </p>
+
+                <img src="Images\Image_4.JPG" alt="#">
+
+                <p>
+                    We have called for each on countries and, then, we have passed in a function that takes an argument, but we're technically not passing an argument in because all of this happens automatically.
+                </p>
+
+                <ul>
+                    <h3><li><b><u>WHILE:</u></b></li></h3>
+                </ul>
+
+                <p>
+                    A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
+                </p>
+
+                <img src="Images\Image_5.JPG" alt="#">
+
+                <p>
+                    If the <b>condition</b> becomes false, the <b>statement</b> within the loop stops executing and control passes to the <b>statement</b> following the loop.
+                </p>
+
+                <p>
+                    The <b>condition</b> test occurs before the <b>statement</b> in the loop is executed. If the <b>condition</b> returns true, the <b>statement</b> is executed and the <b>condition</b> is tested again. If the <b>condition</b> returns false, execution stops, and control is passed to the <b>statement</b> following while.
+                </p>
+
+                <p>
+                    To execute multiple statements, you can use a block statement ({ }) to group those statements.
+                </p>
+
+                <p>
+                    Make sure the <b>condition</b> in a loop eventually becomes false, otherwise you will create an infinite loop that will never end.
+                </p>
+
+                <p>
+                    Following our initial countries array, here we have an example of a while loop so we can see how it works:
+                </p>
+
+                <img src="Images\Image_6.JPG" alt="#">
+
+                <p>
+                    The while loop we have created iterates as long as <b>i</b> is less than <b>countries.length</b>. With each iteration, the loop increments <b>i</b>.
+                </p>
+
+                <ul>
+                    <h3><li><b><u>DO... WHILE:</u></b></li></h3>
+                </ul>
+
+                <p>
+                    The do...while statement repeats until a specified condition evaluates to false. A do...while statement looks as follows:
+                </p>
+
+                <img src="Images\Image_7.JPG" alt="#">
+
+                <p>
+                    The <b>statement</b> is always executed once before the condition is checked. To execute multiple statements, you can use a block statement ({ }) to group those statements.
+                </p>
+
+                <p>
+                    If the <b>condition</b> is true, the statement executes again. At the end of every execution, the condition is checked. When the condition is false, execution stops, and control passes to the statement following do...while.
+                </p>
+
+                <p>
+                    A do…while loop can do something that none of the other loops can do, it can perform and guarantee that it will run at least one time.
+                </p>
+
+                <p>
+                    Here we have an example of a <b>do…while</b> loop:
+                </p>
+
+                <img src="Images\Image_8.JPG" alt="#">
+
+                <p>
+                    In the previous example, the do…while loop iterates at least once and reiterates until <b>i</b> is no longer less than <b>countries.length</b>.
+                </p>
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="questions" id="question2">
+                <h2>2. ¿Cuáles son las diferencias entre const, let y var?</h2>
+    
+                <p>
+                    Variables are containers for storing information. Creating a variable in JavaScript is called "declaring" a variable. In JavaScript, you can declare a variable with the <b>var</b>, <b>let</b> or <b>const</b> keywords. Depending on what you need, you should be using one or another keyword for declaring a variable. In order to know which one suits you better, we are going to see the key aspects each of them provide so you can choose the right option anytime you need to create a variable.
+                </p>
+
+                <p>
+                    <b>Var</b> keyword has function scope while <b>let</b> and <b>const</b> keywords have block scope, with <b>const</b> requiring an initial value and preventing reassignment.
+                </p>
+
+                <ul>
+                    <h3><li><b><u>VAR:</u></b></li></h3>
+                </ul>
+
+                <p>
+                    Var is the oldest keyword to declare a variable in JavaScript. It has the global scoped or function scoped which means variables defined outside the function can be accessed globally, and variables defined inside a particular function can be accessed within the function.
+                </p>
+
+                <p>
+                    The below code example explains the use of the var keyword to declare the variables in JavaScript:
+                </p>
+
+                <img src="Images\Image_9.JPG" alt="#">
+
+                <p>
+                    Here we can see how a var variable's value can be redefined.
+                </p>
+
+                <ul>
+                    <h3><li><b><u>LET:</u></b></li></h3>
+                </ul>
+
+                <p>
+                    Let keyword is an improved version of the var keyword. It was introduced in ES6 or EcmaScript 2015. These variables have the block scope. It can’t be accessible outside the particular code block ({block}).
+                </p>
+
+                <img src="Images\Image_10.JPG" alt="#">
+
+                <p>
+                    By using let, the name of the variable is overwritten.
+                </p>
+
+                <ul>
+                    <h3><li><b><u>CONST:</u></b></li></h3>
+                </ul>
+
+                <p>
+                    Const keyword has all the properties as let keyword, except the user cannot update it and have to assign it with a value at the time of declaration. These variables also have the block scope. It is mainly used to create constant variables whose values can not be changed once they are initialized with a value.
+                </p>
+
+                <img src="Images\Image_11.JPG" alt="#">
+
+                <p>
+                    Gives an Error since the variable state has already been defined and with const variables the value can't be redefined.
+                </p>
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="questions" id="question3">
+                <h2>3. ¿Qué es una función de flecha?</h2>
+
+                <p>
+                    An arrow function expression is a compact alternative to a traditional function expression. Arrow functions have to be stored in a variable. Here’s how arrow function’s syntax looks like:
+                </p>
+
+                <img src="Images\Image_12.JPG" alt="#">
+
+                <p>
+                    Arrow functions are like anonymous functions, they're very similar to function expressions, but instead of adding the function name, we just have the parentheses, holding the arguments, followed by an arrow, followed by what we want to execute.
+                </p>
+
+                <p>
+                    To see how similar a function expression and an arrow function are, we are going to see both of them. Here’s how a function expression looks like:
+                </p>
+
+                <img src="Images\Image_13.JPG" alt="#">
+
+                <p>
+                    Here we have an arrow function example with no arguments:
+                </p>
+
+                <img src="Images\Image_14.JPG" alt="#">
+
+                <p>
+                    We can see how similar they are. In arrow functions, instead of adding the function name, we have the parentheses followed by an arrow, followed by what we want to execute.
+                </p>
+
+                <p>
+                    If you have any argument, you pass them inside the parentheses. Here we have an example of an arrow function with two arguments:
+                </p>
+
+                <img src="Images\Image_15.JPG" alt="#">
+
+                <p>
+                    By having just one argument, we don't have to use the parentheses, we can use them but there's no need:
+                </p>
+
+                <img src="Images\Image_16.JPG" alt="#">
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="questions" id="question4">
+                <h2>4. ¿Qué es la deconstrucción de variables?</h2>
+    
+                <p>
+                    In JavaScript, <b>variable deconstruction</b> gives us the ability to swap variable values.
+                </p>
+
+                <p>
+                    The way of deconstructing variables, so we can exchange its values with other variable's values, is as showed in the next example:
+                </p>
+
+                <img src="Images\Image_17.JPG" alt="#">
+
+                <p>
+                    We can see that, instead of having to create temporary variable names in order to finally be able to swap the values, as we should had done if we wouldn't be using modern versions of JavaScript, we can perform the same output in a single code line.
+                </p>
+
+                
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="questions" id="question5">
+                <h2>5. ¿Qué hace el operador de extensión en JS?</h2>
+    
+                <p>
+                    The <b>spread operator</b> is used in many of the popular JavaScript frameworks so it's important to understand exactly what it does and the situations when we're going to want to use it.
+                </p>
+
+                <p>
+                    The syntax for it is going to be three dots followed by some type of word <b>(...word)</b>.
+                </p>
+
+                <p>
+                    The JavaScript spread operator allows us to <b><u>combine arrays</u></b>. This way, we can copy all or part of an existing array or object into another array or object as we can see in the following example:
+                </p>
+
+                <img src="Images\Image_18.JPG" alt="#">
+
+                <p>
+                    The spread operator is also used for <b><u>copying arrays</u></b>.
+                </p>
+
+                <p>
+                    A very common process that you're going to see inside of programs that are React or Angular based is that you are not supposed to make changes to a data structure.
+                </p>
+
+                <p>
+                    If you have a structure like <b>numbersArray</b>, the common convention is that you wouldn't actually even make changes to <b>numbersArray</b>. 
+                </p>
+
+                <p>
+                    In a program built with React or Angular the common convention is that you would not change <b>numbersArray</b> but instead, you would create a new <b>numbersArray</b>, so you would copy the existing one, and then you would add the new elements to that. 
+                </p>
+
+                <p>
+                    Part of the reason of doing this is because you want your program to have as few side effects as possible. And if you make a change to an existing data structure then, if some other part of the program calls that data structure and doesn't realize you've made changes to it then, you might run into some errors.
+                </p>
+
+                <p>
+                    Here we have an example showing what we just explained:
+                </p>
+
+                <img src="Images\Image_19.JPG" alt="#">
+
+                <p>
+                    The spread operator is often used in combination with <b><u>destructuring</u></b> as we can see as follows:
+                </p>
+
+                <img src="Images\Image_20.JPG" alt="#">
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="questions" id="question6">
+                <h2>6. ¿Qué es la programación orientada a objetos?</h2>
+    
+                <p>
+                    Object Oriented Programming is a programming style based on <b>classes</b> and <b>objects</b>. These group data (properties) and methods (actions) inside a box.
+                </p>
+
+                <p>
+                    OOP was developed to make code more flexible and easier to maintain. JavaScript is prototype-based procedural language, which means it supports both functional and object-oriented programming.
+                </p>
+
+                <p>
+                    In OOP it's important to talk about classes and objects.
+                </p>
+
+                <p>
+                    You can think of a <b>class</b> like a blueprint of a house. A class is not a real world object but we can create objects from a class. It is like an template for an object, it simply gives us a set of rules and guidelines for building objects. We can create classes using the <b><u>class</u></b> keyword which is reserved keyword in JavaScript. Classes can have their own properties and methods.
+                </p>
+
+                <p>
+                    An <b>object</b> is an <b>instance</b> of a <b>class</b>.
+                </p>
+
+                <p>
+                    Let's see through an example how Object Oriented Programing works in JavaScript:
+                </p>
+
+                <img src="Images\Image_21.JPG" alt="#">
+
+                <p>
+                    Here we have created a class, named Account, that has properties for a username and password. 
+                </p>
+
+                <p>
+                    For that, we have built a <b>constructor</b> function. Its role is to run all the processes we want everytime that a new Account is created. Inside () go the arguments. In this case is an object containig a username and a password.
+                </p>
+
+                <p>
+                    We are adding attributes into this.username and this.password items.
+                </p>
+
+                <p>
+                    Finally, we have created a user by instantiating the account class. This way, we have instantiated a new account. User is considered an instance of the account class. User is an object.
+                </p>
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="questions" id="question7">
+                <h2>7. ¿Qué es una promesa en JS?</h2>
+    
+                <p>
+                    One of the most common ways to use promises in JavaScript is when you're communicating with outside APIs.
+                </p>
+
+                <p>
+                    Let's first show an example and then walk through it so we can understand how promises work in JavaScript:
+                </p>
+
+                <img src="Images\Image_22.JPG" alt="#">
+
+                <p>
+                    The way you create a promise is you say <b>new promise</b>. We're creating a new instance of this promise and we're storing it inside of Greeting. 
+                </p>
+
+                <p>
+                    A promise takes two arguments. The first argument is going to be called <b>resolve</b> and the second one is going to be called <b>reject</b>.
+                </p>
+
+                <p>
+                    What that means is that a promise is expected to either work or it's expected to have some kind of error or some kind of issue.
+                </p>
+
+                <p>
+                    What we're doing when we're building a promise is we're telling our program that you're going to get something back. You're going to either get back the successful type of response so, if you're communicating with an API, you're going to get back that API data and then you can deal with it. Or, if there's an error, then we're going to give you an error back and we're going to be able to tell you how to deal with that. 
+                </p>
+
+                <p>
+                    Greeting is the promise name. The common convention when working with promises is to call the promise in multiple lines.
+                </p>
+
+                <p>
+                    <b>Then</b> is a reserved word. It's something that a promise expects. This is when everything works.
+                </p>
+
+                <p>
+                    <b>Catch</b> speaks directly to reject.
+                </p>
+
+                <p>
+                    <b>".catch"</b> is mapped to reject just like <b>".then"</b> is mapped to resolve. 
+                </p>
+            </div>
+
+            <div class="spacer30"></div>
+
+            <div class="questions" id="question8">
+                <h2>8. ¿Qué hacen async y await por nosotros?</h2>
+    
+                <p>
+                    Async and await have been so widely accepted by the JavaScript community because they solve a very important problem that javascript developers have been having to deal with for years, and that is, the callback hell kind of problem. Essentially, what callback hell is, it's a process that you had to implement in order to build out complex processes where you wanted it to dictate when one workflow would happen compared with another one.
+                </p>
+
+                <img src="Images\Image_23.JPG" alt="#">
+
+                <p>
+                    By having the previous two functions, with async and await we can dictate the order that these items (login and updateAccount) are going to occur.
+                </p>
+
+                <img src="Images\Image_24.JPG" alt="#">
+
+                <p>
+                    (*) By prepending await right here what it's going to do is, it's going to say I do not want anything else to occur until this process (login) has completed.
+                </p>
+
+                <p>
+                    If all of this works properly what this is going to do is, it's going to create a workflow where we've now dictated when each one of these processes will occur. By using await and async we have been able to simply declare a list of when we want each one of these processes to occur in the order we want them to occur.
+                </p>
+
+                <img src="Images\Image_25.JPG" alt="#">
+            </div>
+
+            <div class="spacer30"></div>
+        </div>
+    </div>
+</body>
+</html>
